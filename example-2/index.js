@@ -4,3 +4,5 @@ const view = new View();
 view.addParagraph();
 view.addParagraph();
 view.addParagraph();
+
+view.clearParagraphs();
