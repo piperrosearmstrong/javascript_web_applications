@@ -23,4 +23,5 @@ describe('GithubClient class', () => {
       done();
     });
   });
+  
 });
