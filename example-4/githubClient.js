@@ -9,3 +9,4 @@ class GithubClient {
 }
 
 module.exports = GithubClient;
+
