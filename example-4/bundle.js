@@ -48,10 +48,14 @@
             const repoName = repoInputEl.value;
             this.client.getRepoInfo(repoName, (repoData) => {
               console.log(repoData);
+              this.display(repoData);
             });
           });
         }
-        display() {
+        display(repoData) {
+          document.querySelector("#repo-name").textContent = repoData.full_name;
+          document.querySelector("#repo-description").textContent = repoData.description;
+          document.getElementById("image").src = repoData.organization.avatar_url;
         }
       };
       module.exports = GithubView2;
